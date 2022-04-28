@@ -1,0 +1,51 @@
+.company{
+    padding-top: 53px;
+    background: $grayF2;
+    text-align: center;
+}
+
+.footer_header{
+    @include flex;
+    width: 1189px;
+    border-bottom: 1px solid $grayC4;
+    padding-bottom: 42px;
+    margin: auto
+}
+
+.footer_heading{
+    @include font-style($font-main, 22px, 26px, $weight7);
+}
+
+.sns{
+    @include flex;
+    width: 116px;
+    li{
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+    }
+    .twitter{
+        background-image: url(./sns/twitter.png);
+    }
+    .instagram{
+        background-image: url(./sns/instagram.png);
+    }
+    .facebook{
+        background-image: url(./sns/facebook.png);
+    }
+}
+
+.footer_footer{
+    @include flex;
+    @include font-style($font-point, 14px, 20px, $weight7, $gray4F);
+    width: 1189px;
+    margin: auto;
+    padding: 36px 0 38px 0;
+    .company_description{
+        font-weight: $weight4;
+        strong{
+            font-weight: $weight7;
+        }
+    }
+}
+

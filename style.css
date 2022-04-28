@@ -1,0 +1,290 @@
+@import url(reset.css);
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+.movie_modal {
+  border: 2px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F2F2F2;
+  border-radius: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1060px;
+  margin-top: 86px;
+  margin-bottom: 135px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+  font-weight: 700;
+  margin: 41px 0 37px 0;
+}
+
+.navbar {
+  border-top: 2px solid #BDBDBD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 650px;
+  padding: 28px 140px;
+}
+
+.list_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  font-weight: 400;
+}
+
+.list_title:first-child {
+  font-weight: 900;
+  color: black;
+}
+
+.movie_list {
+  border: 2px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 15px;
+  background-color: #fff;
+  width: 1003px;
+  padding: 26px 27px 6px 27px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 31px;
+}
+
+.movie {
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  width: 220px;
+  padding: 19px 20px 0 20px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.poster {
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 11px;
+}
+
+.poster_title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: black;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  width: 180px;
+  word-wrap: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: #828282;
+  font-weight: 400;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2;
+      grid-template-columns: 3fr 2;
+  row-gap: 5px;
+  margin-bottom: 59px;
+}
+
+.description li:nth-child(3) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.description li:nth-child(4) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.description li .content {
+  color: black;
+}
+
+.star {
+  color: #EB5757;
+}
+
+.movie button {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  font-weight: 500;
+  position: absolute;
+  background: #F2F2F2;
+  width: 110px;
+  padding: 9px 0 12px 0;
+}
+
+.movie .reserve {
+  border: none;
+  border-top: 1px solid #BDBDBD;
+  border-right: 1px solid #BDBDBD;
+  left: 0;
+  bottom: 0;
+}
+
+.movie .reserve_video {
+  border: none;
+  border-top: 1px solid #BDBDBD;
+  border-left: 1px solid #BDBDBD;
+  right: 0;
+  bottom: 0;
+}
+
+.play {
+  width: 16px;
+  height: auto;
+  margin-right: 2px;
+  vertical-align: sub;
+}
+
+.company {
+  padding-top: 53px;
+  background: #F2F2F2;
+  text-align: center;
+}
+
+.footer_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1189px;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 42px;
+  margin: auto;
+}
+
+.footer_heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+  font-weight: 700;
+}
+
+.sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 116px;
+}
+
+.sns li {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.sns .twitter {
+  background-image: url(./sns/twitter.png);
+}
+
+.sns .instagram {
+  background-image: url(./sns/instagram.png);
+}
+
+.sns .facebook {
+  background-image: url(./sns/facebook.png);
+}
+
+.footer_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4F4F4F;
+  font-weight: 700;
+  width: 1189px;
+  margin: auto;
+  padding: 36px 0 38px 0;
+}
+
+.footer_footer .company_description {
+  font-weight: 400;
+}
+
+.footer_footer .company_description strong {
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@mixin font-style($font, $size, $height, $weight : 400, $color : $black) {
+    font-family: $font;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin flex($align : center, $justify : space-between){
+	display: flex;
+	align-items : $align;
+	justify-content : $justify;
+}
+
+@mixin border($color, $width:1px){
+    border: $width solid $color;
+    box-sizing: border-box;
+}
