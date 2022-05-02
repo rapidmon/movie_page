@@ -2,7 +2,7 @@
 
 ## Homepage
 
-<img src="./images/homepage" alt="homepage img"></img>
+<img src="./images/homepage.png" alt="homepage img"></img>
 
 ## Repository Description
 
